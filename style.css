@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Main Swiper Container */
+.swiper-row {
+    margin-bottom: 50px;
+}
+@media(max-width:576px){
+    .swiper-row {
+        padding: 0px 30px;
+    }
+}
+
+
+.swiper {
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Change Swiper Bullet Custom Style */
+.swiper-pagination-bullet {
+    background-color: rgb(139, 139, 240);
+    border: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    transition: background-color 0.5s linear;
+}
+
+
+/* Active Swiper Bullet Style */
+.swiper-pagination-bullet-active {
+    background-color: rgb(5, 3, 8);
+    width: 12px;
+    height: 12px;
+}
+
+
+/* Prev and Next Button Style */
+.swiper-button-prev::after {
+    background-image: url("./assets/back.png");
+}
+
+.swiper-button-next::after {
+    background-image: url("./assets/arrow-right.png");
+}
+.swiper-button-next::after,.swiper-button-prev::after {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    content: "";
+}
